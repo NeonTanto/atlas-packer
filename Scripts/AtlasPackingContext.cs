@@ -39,7 +39,7 @@ namespace NeonTanto.Tools.AtlasPacking
 
         public bool TryGetExpandData(Vector2Int size, out AtlasExpandData expandData)
         {
-            expandData = new AtlasExpandData{ area = int.MaxValue };
+            expandData = new AtlasExpandData{ areaPenalty = float.MaxValue };
 
             foreach (var point in points)
             {
@@ -53,7 +53,7 @@ namespace NeonTanto.Tools.AtlasPacking
                         return true;
                     }
 
-                    if (expandData.area > candidateExpand.area)
+                    if (expandData.areaPenalty > candidateExpand.areaPenalty)
                     {
                         expandData = candidateExpand;
                     }
@@ -119,11 +119,14 @@ namespace NeonTanto.Tools.AtlasPacking
                 y = Mathf.Max(0, rect.yMax - size.y)
             };
 
-            var extendArea = delta.x * size.y + delta.y * size.x + delta.x * delta.y;
+            var multiplierX = atlas.size.x / atlas.size.y;
+            var multiplierY = atlas.size.y / atlas.size.x;
+
+            var areaPenalty = delta.x * size.y * multiplierX + delta.y * size.x * multiplierY;
 
             expandData = new AtlasExpandData
             {
-                area = extendArea,
+                areaPenalty = areaPenalty,
                 delta = delta,
                 context = this,
                 bounds = rect

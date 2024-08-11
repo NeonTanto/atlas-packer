@@ -4,7 +4,7 @@ namespace NeonTanto.Tools.AtlasPacking
 {
     internal struct AtlasExpandData
     {
-        public int area;
+        public float areaPenalty;
         public Vector2Int delta;
         public RectInt bounds;
         public AtlasPackingContext context;

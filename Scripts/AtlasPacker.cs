@@ -56,7 +56,7 @@ namespace NeonTanto.Tools.AtlasPacking
 
             if (contexts.Count == 0) AddNewContext(size);
 
-            var expandData = new AtlasExpandData {area = int.MaxValue};
+            var expandData = new AtlasExpandData {areaPenalty = float.MaxValue};
 
             for (var i = 0; i < contexts.Count; i++)
             {
@@ -71,7 +71,7 @@ namespace NeonTanto.Tools.AtlasPacking
                         break;
                     }
 
-                    if (expandData.area > candidateExpandData.area)
+                    if (expandData.areaPenalty > candidateExpandData.areaPenalty)
                     {
                         expandData = candidateExpandData;
                     }
