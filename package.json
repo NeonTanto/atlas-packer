@@ -1,0 +1,23 @@
+{
+    "name": "com.neontanto.opensource.atlaspacker",
+    "displayName": "Atlas Packer",
+    "version": "0.1.0-beta",
+    "unity": "2023.1",
+    "description": "Simple atlas packer for Unity",
+    "keywords": [
+      "tool",
+      "atlas",
+      "unity"
+    ],
+    "dependencies": {
+    },
+    "author": {
+      "name": "Neon Tanto",
+      "email": "andreich.ne@gmail.com",
+      "url": "https://github.com/NeonTanto/atlas-packer"
+    },
+    "repository": {
+      "url": "https://github.com/NeonTanto/atlas-packer",
+      "type": "git"
+    }
+  }
