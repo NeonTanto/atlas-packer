@@ -1,7 +1,7 @@
 {
     "name": "com.neontanto.opensource.atlaspacker",
     "displayName": "Atlas Packer",
-    "version": "0.1.0-beta",
+    "version": "0.1.1-beta",
     "unity": "2023.1",
     "description": "Simple atlas packer for Unity",
     "keywords": [
