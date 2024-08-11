@@ -4,7 +4,7 @@
 
 Atlas Packer its simple tool for pack regions to atlases
 
-[](.ReadmeImages/Img_1.png)
+![](.ReadmeImages/Img_1.png)
 
 ## Features
 
