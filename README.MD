@@ -17,7 +17,7 @@ Atlas Packer its simple tool for pack regions to atlases
 
 ## Instalation
 
-You can use this tool as package via git link git@github.com:NeonTanto/atlas-packer.git or https://github.com/NeonTanto/atlas-packer.git. About installation packages from git you can read in this [manual](https://docs.unity3d.com/Manual/upm-ui-giturl.html)
+You can use this tool as package via git link `git@github.com:NeonTanto/atlas-packer.git` or `https://github.com/NeonTanto/atlas-packer.git`. About installation packages from git you can read in this [manual](https://docs.unity3d.com/Manual/upm-ui-giturl.html)
 
 ## Basic usage
 
