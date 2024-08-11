@@ -55,7 +55,7 @@ The Reset method will drop the internal state and breaks the connection with the
 
 ### Auto packing:
 
-When you work with manual methods you need choose order of rects by self. For "auoto" approach we have two extentions method:
+When you work with manual methods you need choose order of rects by self. For "auto" approach we have two extention methods:
 
 ```cs
 packer.PackRects(rects, RectOrder.HeightThenWidth);
