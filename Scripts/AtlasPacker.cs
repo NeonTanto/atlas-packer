@@ -21,7 +21,7 @@ namespace NeonTanto.Tools.AtlasPacking
 
             contexts = new List<AtlasPackingContext>();
             packedAtlases = new List<AtlasData>();
-            packedAtlasRects = new ListStack<List<AtlasRect>>();
+            packedAtlasRects = new List<List<AtlasRect>>();
             notPackedRects = new List<AtlasRect>();
 
             PackData = new AtlasPackData(packedAtlases.AsReadOnly(), notPackedRects.AsReadOnly());
