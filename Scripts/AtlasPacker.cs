@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Unity.Plastic.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 namespace NeonTanto.Tools.AtlasPacking
